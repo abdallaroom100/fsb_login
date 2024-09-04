@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mingzat&family=Noto+Sans+Hanunoo&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  /* background: linear-gradient(10deg, #ecf1ff 0%, #e9efff 80%, #ffffff); */
+  background: linear-gradient(269deg, #e7e6ff0d 0%, #e9efff 80%, #ffffff);
+  background-attachment: scroll;
+  background-size: auto;
+  background-attachment: scroll;
+  background-size: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  max-width: 100%;
+  /* font-family: "Noto Sans TC", sans-serif; */
+  font-family: "Kanit", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-top: 13px;
+  font-weight: 400;
+  color: rgb(70, 90, 105);
+  font-size: 13px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.container {
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.container .content {
+  display: flex;
+  pointer-events: auto;
+
+  padding-bottom: 0px;
+  width: 100%;
+  cursor: pointer;
+
+  justify-content: space-around;
+}
+
+.container .content .logo {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  flex-shrink: 100;
+  align-items: center;
+  justify-content: center;
+}
+.container .content .logo img {
+  max-height: 60px;
+  min-height: 0px;
+  object-fit: contain;
+ 
+  overflow: hidden;
+}
+
+form input {
+    pointer-events: auto;
+    padding: 10px 16px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(203, 210, 217);
+    border-radius: 12px;
+    align-items: center;
+    flex-direction: row;
+    padding: 18px;
+    font-size: 14px;
+    color: rgb(6, 6, 7);
+    display: inline;
+    font-size: 15.6px;
+    font-family: "Optimistic Text Medium";
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    /* letter-spacing: 0.8px; */
+    font-family: "Noto Sans TC", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  transform: translateY(-33px);
+  gap: 13px;
+}
+
+form button {
+
+  opacity: 1;
+  height: 44px;
+  min-width: 44px;
+  font-family: "Noto Sans TC", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(0, 100, 224);
+  border: 0px solid rgb(28, 43, 51);
+  border-radius: 22px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  display: inline;
+  font-size: 16px;
+
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+form a {
+  color: rgb(28, 43, 51);
+  font-weight: 500;
+  display: inline;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.create-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.create-button .create {
+
+  opacity: 1;
+  height: 44px;
+  min-width: 44px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(0, 100, 224);
+  border-radius: 22px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(0, 100, 224);
+  font-weight: 300;
+  display: inline;
+  font-size: 16px;
+  width: 90%;
+  font-family: "Kanit", sans-serif;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.meta-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  mask-size: contain;
+}
+
+.meta-image img{
+    height: 12px;
+    width: 60px;
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 10px;
+}

